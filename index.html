@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- OG 태그(카톡이나 페북에 공유했을 때 보이는 이미지!) -->
+    <meta property="og:title" content="Eunjeong's Profile">
+    <meta property="og:description" content="Hello!!!">
+    <meta property="og:image" content="하늘보리.jpg">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eunjeong's Profile</title>
+
+    <style>
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+        * {
+            font-family: "Pretendard",serif;
+        }
+        body{
+            background-color: #09853f;
+        }
+        .profile{
+            width: 100px;
+            height: 100px;
+            
+            border-radius: 100%;
+            border : 2px solid white;
+
+            /* 밑 세줄은 거의 붙어다님 */
+            background-image: url('하늘보리.jpg');
+            background-position: center;   
+            background-size: cover;
+        }
+        .main{
+            color: white;
+            font-size: 20px;
+
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        .sub{
+            color: white;
+            font-size: 14px;
+
+            margin-top: 0px;
+            margin-bottom: 30px;
+        }
+        .wrap{
+            width: 300px;
+            margin: 100px auto;
+            /*네 줄 붙어다님*/
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .wrap > a{
+            width: 300px;
+            height: 50px;
+
+             background-color: white;
+             border-radius: 8px;
+
+             margin-bottom: 25px;
+
+             font-size: 14px;
+             font-weight: bold;
+             color: #09853f;
+
+             display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            text-decoration: none;
+
+            box-shadow: 3px 3px 5px 0px black;
+        }
+        .wrap > a:hover{
+            background-color: #044922;
+            font-size: 19px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="profile"></div>
+        <h1 class="main">이은정</h1>
+        <p class="sub">코딩.. 좋아하세요?</p>
+
+        <!-- '_blank'는 새로운 탭에서 접속, 'blank'는 열린 탭에서 접속 -->
+        <a target="_blank" href="https://github.com/Eundding">GitHub</a>
+        <a target="_blank" href="https://dkan9634.tistory.com/">Tistory</a>
+        <a target="_blank" href="https://www.instagram.com/dingding_eundding/">Instagram</a>
+        <a target="_blank" href="https://blog.naver.com/dkan9634">Naver Blog</a>
+    </div>
+    
+</body>
+</html>
